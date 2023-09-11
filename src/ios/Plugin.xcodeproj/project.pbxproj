@@ -1,0 +1,251 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4D32E7319535FF500940E9F /* CoronaLiveBuildLibrary.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4D32E7219535FF500940E9F /* CoronaLiveBuildLibrary.mm */; };
+		F56244621D9ADD5600AEFB99 /* CoronaLiveBuildCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4D32E8519536D1B00940E9F /* CoronaLiveBuildCore.mm */; };
+		F56244631D9ADD5A00AEFB99 /* CoronaLiveBuildActivityIndicator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4D32E9E1953BF0A00940E9F /* CoronaLiveBuildActivityIndicator.mm */; };
+		F56244641D9ADD6000AEFB99 /* CoronaLiveBuildFileManagerLocal.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5EBB8E71D9209DE008D5422 /* CoronaLiveBuildFileManagerLocal.mm */; };
+		F56244651D9ADD6400AEFB99 /* CoronaLiveBuildFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E992C51A706F8200DAB019 /* CoronaLiveBuildFileManager.m */; };
+		F56244681D9AEA6100AEFB99 /* CoronaLiveBuildFileManagerDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F56244671D9AEA6100AEFB99 /* CoronaLiveBuildFileManagerDelegateImpl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4E253B4166D6FB300DCDC2C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A4D32E7119535FF500940E9F /* CoronaLiveBuildLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CoronaLiveBuildLibrary.h; path = Plugin/CoronaLiveBuildLibrary.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A4D32E7219535FF500940E9F /* CoronaLiveBuildLibrary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = CoronaLiveBuildLibrary.mm; path = Plugin/CoronaLiveBuildLibrary.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A4D32E8419536D1B00940E9F /* CoronaLiveBuildCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CoronaLiveBuildCore.h; path = Plugin/CoronaLiveBuildCore.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A4D32E8519536D1B00940E9F /* CoronaLiveBuildCore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = CoronaLiveBuildCore.mm; path = Plugin/CoronaLiveBuildCore.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A4D32E9D1953BF0A00940E9F /* CoronaLiveBuildActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CoronaLiveBuildActivityIndicator.h; path = Plugin/CoronaLiveBuildActivityIndicator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A4D32E9E1953BF0A00940E9F /* CoronaLiveBuildActivityIndicator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = CoronaLiveBuildActivityIndicator.mm; path = Plugin/CoronaLiveBuildActivityIndicator.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A4E253B6166D6FB300DCDC2C /* libplugin_liveBuild.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libplugin_liveBuild.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56244661D9AEA6100AEFB99 /* CoronaLiveBuildFileManagerDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoronaLiveBuildFileManagerDelegateImpl.h; path = Plugin/CoronaLiveBuildFileManagerDelegateImpl.h; sourceTree = "<group>"; };
+		F56244671D9AEA6100AEFB99 /* CoronaLiveBuildFileManagerDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = CoronaLiveBuildFileManagerDelegateImpl.m; path = Plugin/CoronaLiveBuildFileManagerDelegateImpl.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F5EBB8E61D9209DE008D5422 /* CoronaLiveBuildFileManagerLocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoronaLiveBuildFileManagerLocal.h; path = Plugin/CoronaLiveBuildFileManagerLocal.h; sourceTree = "<group>"; };
+		F5EBB8E71D9209DE008D5422 /* CoronaLiveBuildFileManagerLocal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CoronaLiveBuildFileManagerLocal.mm; path = Plugin/CoronaLiveBuildFileManagerLocal.mm; sourceTree = "<group>"; };
+		F8E992891A6ED8FC00DAB019 /* CoronaLiveBuildFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CoronaLiveBuildFileManager.h; path = Plugin/CoronaLiveBuildFileManager.h; sourceTree = "<group>"; };
+		F8E992C51A706F8200DAB019 /* CoronaLiveBuildFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoronaLiveBuildFileManager.m; path = Plugin/CoronaLiveBuildFileManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4E253B3166D6FB300DCDC2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A447B609165D72A6009EA762 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A4D32E9D1953BF0A00940E9F /* CoronaLiveBuildActivityIndicator.h */,
+				A4D32E9E1953BF0A00940E9F /* CoronaLiveBuildActivityIndicator.mm */,
+				A4D32E8419536D1B00940E9F /* CoronaLiveBuildCore.h */,
+				A4D32E8519536D1B00940E9F /* CoronaLiveBuildCore.mm */,
+				F5EBB8E61D9209DE008D5422 /* CoronaLiveBuildFileManagerLocal.h */,
+				F5EBB8E71D9209DE008D5422 /* CoronaLiveBuildFileManagerLocal.mm */,
+				F8E992891A6ED8FC00DAB019 /* CoronaLiveBuildFileManager.h */,
+				F8E992C51A706F8200DAB019 /* CoronaLiveBuildFileManager.m */,
+				F56244661D9AEA6100AEFB99 /* CoronaLiveBuildFileManagerDelegateImpl.h */,
+				F56244671D9AEA6100AEFB99 /* CoronaLiveBuildFileManagerDelegateImpl.m */,
+				A4D32E7119535FF500940E9F /* CoronaLiveBuildLibrary.h */,
+				A4D32E7219535FF500940E9F /* CoronaLiveBuildLibrary.mm */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A484110E15114F700074BD57 = {
+			isa = PBXGroup;
+			children = (
+				A447B609165D72A6009EA762 /* Source */,
+				A484111A15114F700074BD57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A484111A15114F700074BD57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4E253B6166D6FB300DCDC2C /* libplugin_liveBuild.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4E253B5166D6FB300DCDC2C /* plugin_liveBuild */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E253BF166D6FB300DCDC2C /* Build configuration list for PBXNativeTarget "plugin_liveBuild" */;
+			buildPhases = (
+				A4E253B2166D6FB300DCDC2C /* Sources */,
+				A4E253B3166D6FB300DCDC2C /* Frameworks */,
+				A4E253B4166D6FB300DCDC2C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = plugin_liveBuild;
+			productName = plugin_library;
+			productReference = A4E253B6166D6FB300DCDC2C /* libplugin_liveBuild.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A484111015114F700074BD57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A484111315114F700074BD57 /* Build configuration list for PBXProject "Plugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A484110E15114F700074BD57;
+			productRefGroup = A484111A15114F700074BD57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4E253B5166D6FB300DCDC2C /* plugin_liveBuild */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4E253B2166D6FB300DCDC2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56244621D9ADD5600AEFB99 /* CoronaLiveBuildCore.mm in Sources */,
+				F56244641D9ADD6000AEFB99 /* CoronaLiveBuildFileManagerLocal.mm in Sources */,
+				A4D32E7319535FF500940E9F /* CoronaLiveBuildLibrary.mm in Sources */,
+				F56244681D9AEA6100AEFB99 /* CoronaLiveBuildFileManagerDelegateImpl.m in Sources */,
+				F56244651D9ADD6400AEFB99 /* CoronaLiveBuildFileManager.m in Sources */,
+				F56244631D9ADD5A00AEFB99 /* CoronaLiveBuildActivityIndicator.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A484114015114F700074BD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/CoronaEnterprise/Corona/shared/include/Corona ${SRCROOT}/CoronaEnterprise/Corona/shared/include/lua ${SRCROOT}/CoronaEnterprise/Corona/ios/include/Corona";
+			};
+			name = Debug;
+		};
+		A484114115114F700074BD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/CoronaEnterprise/Corona/shared/include/Corona ${SRCROOT}/CoronaEnterprise/Corona/shared/include/lua ${SRCROOT}/CoronaEnterprise/Corona/ios/include/Corona";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4E253C0166D6FB300DCDC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A4E253C1166D6FB300DCDC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A484111315114F700074BD57 /* Build configuration list for PBXProject "Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A484114015114F700074BD57 /* Debug */,
+				A484114115114F700074BD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E253BF166D6FB300DCDC2C /* Build configuration list for PBXNativeTarget "plugin_liveBuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E253C0166D6FB300DCDC2C /* Debug */,
+				A4E253C1166D6FB300DCDC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A484111015114F700074BD57 /* Project object */;
+}
