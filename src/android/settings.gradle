@@ -1,0 +1,6 @@
+rootProject.name = "LiveBuilds"
+include("app", "plugin")
+
+if (settings.hasProperty('coronaExpansionFileName')) {
+	include("preloadedAssets")
+}

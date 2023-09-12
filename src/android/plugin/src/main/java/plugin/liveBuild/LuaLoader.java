@@ -98,7 +98,7 @@ public class LuaLoader implements JavaFunction {
 			PermissionState writeExternalStoragePermissionState = permissionsServices.getPermissionStateFor(PermissionsServices.Permission.WRITE_EXTERNAL_STORAGE);
 			switch(writeExternalStoragePermissionState) {
 				case MISSING:
-					permissionsServices.showPermissionMissingFromManifestAlert(PermissionsServices.Permission.WRITE_EXTERNAL_STORAGE, "Corona Live View requires access to the device's Storage!");
+					run();
 					break;
 				case DENIED:
 					// Only possible on Android 6.
@@ -109,6 +109,8 @@ public class LuaLoader implements JavaFunction {
 
 						// Request Write External Storage permission.
 						permissionsServices.requestPermissions(settings, this);
+					} else {
+						run();
 					}
 					break;
 				default:

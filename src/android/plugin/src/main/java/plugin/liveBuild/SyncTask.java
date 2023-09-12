@@ -523,11 +523,15 @@ class SyncTask extends TimerTask {
 
         mServerIP = mServerIPConfig;
         mServerPort = mServerPortConfig;
-
+        boolean manifestExists = false;
+        try {
+            LuaLoader.getActivity().getAssets().open("_corona_live_build_manifest.txt").close();
+            manifestExists = true;
+        } catch (Throwable ignore) {}
         final SharedPreferences prefs = mContext.getSharedPreferences(PREFERENCE_FILE, 0);
         String installId = prefs.getString(PREF_INSTALL_ID, null);
         File mainLua = new File(mBaseDir, "main.lua");
-        if(installId == null || !installId.equals(mBuildId)  || !mainLua.exists()) {
+        if(manifestExists && (installId == null || !installId.equals(mBuildId)  || !mainLua.exists())) {
             SharedPreferences.Editor e = prefs.edit();
             e.putString(PREF_INSTALL_ID, mBuildId);
             e.apply();

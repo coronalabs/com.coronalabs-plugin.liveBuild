@@ -52,3 +52,9 @@ android/assets/*
 
 android/bin
 android/libs
+
+# Androind Stuff
+.gradle/
+.idea/
+build/
+
