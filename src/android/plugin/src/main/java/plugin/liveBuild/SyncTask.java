@@ -779,6 +779,11 @@ class SyncTask extends TimerTask {
             linksToCreate = 0;
         }
 
+        // TODO: Consider parsing the compressed resource.car directly from the apk to remove this
+        //       exception. The Android part of Solar2D uses mmap to load the unzipped resource.car,
+        //       whose location overlaps with mBaseDir, causing the update to be triggered.
+        filesToDelete.remove("/resource.car");
+
         int numUpdates = filesToDelete.size() + filesToDownload.size() + dirsToCreate.size() + dirsToDelete.size() + linksToCreate;
 
         if (numUpdates > 0) {
