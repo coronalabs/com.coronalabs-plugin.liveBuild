@@ -1,34 +1,16 @@
+--
+-- For more information on build.settings, see the Project Build Settings guide at:
+-- https://docs.coronalabs.com/guide/distribution/buildSettings
+--
+
 settings =
 {
 	orientation =
 	{
+		-- Supported values for orientation:
+		-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
 		default = "landscapeRight",
-		supported = { "landscapeLeft", "landscapeRight" }
+		supported = { "landscapeRight" }
 	},
 
-	plugins =
-	{
-		-- key is the name passed to Lua's 'require()'
-		["plugin.liveBuild"] =
-		{
-			-- required
-			publisherId = "com.coronalabs",
-		},
-	},
-	iphone =
-	{
-		plist =
-		{
-			CFBundleURLTypes =
-			{
-				{
-					CFBundleURLSchemes =
-					{
-						"db-l1q0pln8qsi8qyp",	
-					}
-				}
-			}
-
-		},
-	}
 }
