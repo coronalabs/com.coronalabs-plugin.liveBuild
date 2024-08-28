@@ -1,11 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdk 33
+    namespace = "plugin.liveBuild"
+    compileSdk 34
 
     defaultConfig {
         minSdkVersion 15
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
