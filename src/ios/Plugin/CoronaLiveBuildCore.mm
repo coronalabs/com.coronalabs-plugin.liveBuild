@@ -241,29 +241,21 @@ GetRoot( UIViewController *controller )
 - (void)showResetProjectAlert
 {
 	NSString *t = @"Are you sure you want to reset the project?";
-	UIAlertView *alertView = [[UIAlertView alloc]
-							  initWithTitle:t
-							  message:nil
-							  delegate:self
-							  cancelButtonTitle:kCancel
-							  otherButtonTitles:@"Reset", nil];
-	[alertView show];
-}
+	UIAlertController* alertController = [UIAlertController alertControllerWithTitle:t
+																			 message:nil
+																	  preferredStyle:UIAlertControllerStyleAlert];
 
+	UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:kCancel style:UIAlertActionStyleCancel
+														 handler:^(UIAlertAction * action) {}];
+	UIAlertAction* resetAction = [UIAlertAction actionWithTitle:@"Reset" style:UIAlertActionStyleDefault
+														handler:^(UIAlertAction * action) {
+															[self reset];
+														}];
 
+	[alertController addAction:cancelAction];
+	[alertController addAction:resetAction];
 
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-	if ( 0 == buttonIndex )
-	{
-		// Cancelled
-	}
-	else if ( 1 == buttonIndex )
-	{
-		// Reset Project
-		[self reset];
-	}
+	[_viewController presentViewController:alertController animated:YES completion:nil];
 }
 
 #endif

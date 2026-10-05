@@ -844,15 +844,6 @@ static const UInt8 certificate[] = { 48,130,3,80,48,130,2,56,2,9,0,164,194,100,1
 	NSString *title = @"Configuration Change Detected";
 	NSString *message = @"To properly reflect changes in 'build.settings' or 'config.lua' you may need to rebuild the app.";
 	NSString *ok = @"OK";
-#if not(TARGET_OS_TV)
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
-													message:message
-												   delegate:nil
-										  cancelButtonTitle:ok
-										  otherButtonTitles:nil];
-	[alert show];
-	[alert release];
-#else
 	UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
 																   message:message
 															preferredStyle:UIAlertControllerStyleAlert];
@@ -862,9 +853,6 @@ static const UInt8 certificate[] = { 48,130,3,80,48,130,2,56,2,9,0,164,194,100,1
 	[alert addAction:defaultAction];
 	UIViewController* controller = [UIApplication sharedApplication].keyWindow.rootViewController;
 	[controller presentViewController:alert animated:YES completion:nil];
-
-
-#endif
 }
 
 @end
