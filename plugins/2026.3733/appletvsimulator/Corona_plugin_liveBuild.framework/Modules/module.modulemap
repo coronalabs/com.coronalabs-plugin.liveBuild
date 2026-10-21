@@ -1,0 +1,6 @@
+framework module Corona_plugin_liveBuild {
+  umbrella header "Corona_plugin_liveBuild.h"
+
+  export *
+  module * { export * }
+}
